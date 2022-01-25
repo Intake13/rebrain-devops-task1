@@ -12,13 +12,30 @@
 
 ![screenshot1](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcheckroi.ru%2Fblog%2Fwp-content%2Fuploads%2F2020%2F06%2Fprofession-devops-engineer-e1591042905139.jpg&f=1&nofb=1)
 
-```http
+###Добавьте данные блоки кода в ***nginx.conf*** чтобы включить поддержку
+
+```nginx
 mail {
-  auth_http  192.168.1.44:80/mail/auth.php;
+  auth_http  _PATH_FOR_AUTH_;
   pop3_capabilities  "TOP"  "USER";
   imap_capabilities  "IMAP4rev1"  "UIDPLUS";
-```
 
+  server {
+    listen     _PORT_;
+    protocol   _PROTOCOL_;
+    proxy      on;
+  }
+
+  server {
+    listen     _PORT_;
+    protocol   _PROTOCOL_;
+    proxy      on;
+  }
+```
+В следующие переменные нужно вписать свои значения:
+* PATH_FOR_AUTH
+* PORT
+* PROTOCOL
 
 ```
 hello warld
