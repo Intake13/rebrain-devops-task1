@@ -1,24 +1,35 @@
-# rebrain-devops-task1
+# Таск 4
 
 > Реппозиторий для задания4
 
-В данном репозитории на
+В данном репозитории находится:
+1. Файл README.md
+2. Стандартный конфигурационный файл nginx
 
-background details relevant to understanding what this module does
+Реппозиторий доступен по ссылке [config](https://gitlab.rebrainme.com/devops_users_repos/3498/rebrain-devops-task1)
 
 ## Usage
 
-```js
-var rebrainDevopsTask1 = require('rebrain-devops-task1')
+![screenshot1](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcheckroi.ru%2Fblog%2Fwp-content%2Fuploads%2F2020%2F06%2Fprofession-devops-engineer-e1591042905139.jpg&f=1&nofb=1)
 
-console.log('hello warld')
+```http
+mail {
+  auth_http  192.168.1.44:80/mail/auth.php;
+  pop3_capabilities  "TOP"  "USER";
+  imap_capabilities  "IMAP4rev1"  "UIDPLUS";
 ```
 
-outputs
 
 ```
 hello warld
 ```
+
+Название файла  | Содержание файла
+----------------|----------------------
+README.md       | Файл описания
+nginx.conf      | Стандартный конфиг файл
+
+
 
 ## API
 
@@ -38,12 +49,12 @@ $ npm install rebrain-devops-task1
 
 ## Acknowledgments
 
-rebrain-devops-task1 was inspired by..
+rebrain-devops-task1 был вдохновлен командой REBRAIN
 
 ## See Also
 
-- [`noffle/common-readme`](https://github.com/noffle/common-readme)
-- ...
+- [`Readme Template`](https://github.com/hackergrrl/common-readme)
+- [`Гайд по Markdown`](https://guides.github.com/features/mastering-markdown/)
 
 ## License
 
